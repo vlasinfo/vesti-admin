@@ -155,3 +155,6 @@ body {
 .skin-vesti.layout-top-nav .main-header > .logo:hover {
   background-color: #3b8ab8;
 }
+.skin-vesti .box.box-primary {
+  border-top-color: #06256c;
+}
