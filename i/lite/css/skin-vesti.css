@@ -8,6 +8,23 @@ body {
   background: #06256c;
   border-color: #002072;
 }
+.nav-tabs-custom>.nav-tabs>li.active {
+  border-top-color: #06256c;
+}
+.skin-vesti .nav-tabs-custom>.nav-tabs {
+  background-color: #ecf0f5;
+}
+.skin-vesti .disabledTab a {
+  pointer-events: none;
+}
+.skin-vesti .disabledTab a {
+  color: #999 !important;
+}
+.skin-vesti .box .rating,
+.skin-vesti .box .views,
+.skin-vesti .box .users {
+  text-align: center;
+}
 
 .skin-vesti .main-header .navbar {
   background-color: #06256c;
@@ -156,5 +173,5 @@ body {
   background-color: #3b8ab8;
 }
 .skin-vesti .box.box-primary {
-  border-top-color: #06256c;
+  border-top-color: transparent;
 }
