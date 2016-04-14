@@ -235,15 +235,18 @@
                 </ul>
                 <div class="tab-content">
                   <div class="tab-pane" id="vesti">
-
+                  <p>Нет информации</p>
                   </div><!-- /.tab-pane -->
                   <div class="tab-pane active" id="vesti-ukr">
                   <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
 
                       <div class="box box-solid">
                         <div class="box-header with-border">
                           <h3 class="box-title">Всего просмотров</h3>
+                          <div class="box-tools pull-right">
+                            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                          </div>
                         </div><!-- /.box-header -->
                         <div class="box-body">
 
@@ -259,27 +262,62 @@
 
                         </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-6">
 
                       <div class="box box-solid">
                         <div class="box-header with-border">
                           <h3 class="box-title">Трафик</h3>
+                          <div class="box-tools pull-right">
+                            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                          </div>
                         </div><!-- /.box-header -->
                         <div class="box-body">
 
+                          <div class="chart">
+                            <canvas id="salesChart" style="height: 180px; width: 699px;" width="699" height="180"></canvas>
+                          </div>
 
                         </div>
                       </div>
 
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-3">
 
                       <div class="box box-solid">
                         <div class="box-header with-border">
                           <h3 class="box-title">Социальные сети</h3>
+                          <div class="box-tools pull-right">
+                            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                          </div>
                         </div><!-- /.box-header -->
                         <div class="box-body">
+
+                          <div class="box-body table-responsive no-padding">
+                            <table class="table table-hover">
+                              <tr>
+                                <th> Соц. сеть</th>
+                                <th>Просмотры</th>
+                              </tr>
+                              <tr>
+                                <td class="fb">Facebook</td>
+                                <td>8 365</td>
+                              </tr>
+                              <tr>
+                                <td class="tw">Twitter</td>
+                                <td>2 345</td>
+                              </tr>
+                              <tr>
+                                <td class="gl">Google</td>
+                                <td>645</td>
+                              </tr>
+                              <tr>
+                                <td class="vk">Vk</td>
+                                <td>2 345</td>
+                              </tr>
+                            </table>
+                          </div>
+
 
                         </div>
                       </div>
@@ -287,7 +325,7 @@
                     </div>
 
                       </div>
-                    </div>
+
 
 
                     <div class="row">
@@ -295,6 +333,9 @@
                         <div class="box box-primary">
                           <div class="box-header with-border">
                             <h3 class="box-title">Популярные статьи сегодня</h3>
+                            <div class="box-tools pull-right">
+                              <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                            </div>
                           </div>
                           <div class="box-body table-responsive no-padding">
                             <table class="table table-hover">
@@ -426,6 +467,9 @@
                         <div class="box box-primary">
                           <div class="box-header with-border">
                             <h3 class="box-title">Популярные новости</h3>
+                            <div class="box-tools pull-right">
+                              <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                            </div>
                           </div>
                           <div class="box-body table-responsive no-padding">
                             <table class="table table-hover">
@@ -553,7 +597,7 @@
                         </div>
                       </div>
                     </div>
-
+                  </div>
                     </div>
 
                   </div><!-- /.tab-pane -->

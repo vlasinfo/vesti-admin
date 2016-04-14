@@ -187,6 +187,12 @@ body {
 .skin-vesti .box {
   border: 2px solid #f4f4f4;
 }
+.skin-vesti .box:hover {
+  border: 2px solid #cecece;
+}
+.skin-vesti .box .btn {
+  color: #cecece;
+}
 .skin-vesti .progress {
   border: 1px solid #d9d9d9;
   padding: 1px;
@@ -204,4 +210,16 @@ body {
 }
 .skin-vesti .progress-views .total {
   font-weight: bold;
+}
+.skin-vesti .fb {
+  color: #3b5998;
+}
+.skin-vesti .tw {
+  color: #00aced;
+}
+.skin-vesti .gl {
+  color: #dd4b39;
+}
+.skin-vesti .vk {
+  color: #45668e;
 }
