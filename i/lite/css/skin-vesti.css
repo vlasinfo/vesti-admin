@@ -25,6 +25,18 @@ body {
 .skin-vesti .box .users {
   text-align: center;
 }
+.skin-vesti .box .rating .up {
+  color: #5cb85c;
+}
+.skin-vesti .box .rating .middle {
+  color: #f0ad4e;
+}
+.skin-vesti .box .rating .down {
+  color: #d9534f;
+}
+.skin-vesti .graph canvas {
+  max-width: 75px;
+}
 
 .skin-vesti .main-header .navbar {
   background-color: #06256c;
@@ -172,6 +184,24 @@ body {
 .skin-vesti.layout-top-nav .main-header > .logo:hover {
   background-color: #3b8ab8;
 }
-.skin-vesti .box.box-primary {
-  border-top-color: transparent;
+.skin-vesti .box {
+  border: 2px solid #f4f4f4;
+}
+.skin-vesti .progress {
+  border: 1px solid #d9d9d9;
+  padding: 1px;
+  height: auto;
+}
+.skin-vesti .progress-bar-aqua {
+  background: #3c8dbc;
+}
+.skin-vesti .progress-views {
+  text-align: center;
+  font-size: 16px;
+}
+.skin-vesti .progress-views .current {
+  font-weight: bold;
+}
+.skin-vesti .progress-views .total {
+  font-weight: bold;
 }
