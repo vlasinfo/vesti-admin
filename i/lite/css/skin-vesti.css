@@ -186,6 +186,7 @@ body {
 }
 .skin-vesti .box {
   border: 2px solid #f4f4f4;
+    overflow: hidden;
 }
 .skin-vesti .box:hover {
   border: 2px solid #cecece;
@@ -193,13 +194,27 @@ body {
 .skin-vesti .box .btn {
   color: #cecece;
 }
-.skin-vesti .progress {
-  border: 1px solid #d9d9d9;
-  padding: 1px;
-  height: auto;
+.skin-vesti .sp-holder {
+    width: 250px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
 }
-.skin-vesti .progress-bar-aqua {
-  background: #3c8dbc;
+.skin-vesti .sp-holder .sp {
+    top: -28px;
+}
+.skin-vesti .sp-holder .sp-percent {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.skin-vesti .sp-holder .sp-from {
+    position: relative;
+    top: 3px;
+}
+.skin-vesti .sp-holder .sp-total {
+    font-size: 29px;
 }
 .skin-vesti .progress-views {
   text-align: center;
@@ -222,4 +237,50 @@ body {
 }
 .skin-vesti .vk {
   color: #45668e;
+}
+.skin-vesti .chart .traffic-graph {
+    position: relative;
+    height: 156px;
+}
+.skin-vesti .chart .chart-legend {
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+}
+.skin-vesti .chart .chart-legend li {
+    display: inline-block;
+    padding: 0 5px;
+}
+.skin-vesti .morris-hover {
+    position: absolute;
+    z-index: 1000
+}
+.skin-vesti .morris-hover.morris-default-style {
+    border-radius: 10px;
+    padding: 10px;
+    color: #666;
+    background: rgba(255, 255, 255, 0.6);
+    border: solid 2px rgba(230, 230, 230, 0.8);
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: left
+}
+.skin-vesti .morris-hover.morris-default-style .morris-hover-row-label {
+    font-weight: bold;
+    margin: 0.25em 0;
+}
+.skin-vesti .morris-hover.morris-default-style .morris-hover-point {
+    white-space: nowrap;
+    margin: 0.1em 0
+}
+.skin-vesti .morris-hover-row-label {
+    transform: rotate(180deg);
+    text-align: center;
+    font-size: 14px;
+}
+.skin-vesti .morris-hover {
+    transform: rotate(180deg);
+}
+.skin-vesti .morris-hover > .morris-hover-point {
+    transform: rotate(-180deg);
 }

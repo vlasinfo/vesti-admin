@@ -15,7 +15,7 @@
 
   </head>
 
-  <body class="skin-vesti sidebar-mini">
+  <body class="skin-vesti sidebar-mini sidebar-collapse">
     <div class="wrapper">
 
       <!-- Main Header -->
@@ -239,7 +239,7 @@
                   </div><!-- /.tab-pane -->
                   <div class="tab-pane active" id="vesti-ukr">
                   <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
 
                       <div class="box box-solid">
                         <div class="box-header with-border">
@@ -250,19 +250,19 @@
                         </div><!-- /.box-header -->
                         <div class="box-body">
 
-                          <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="270 743" aria-valuemin="0" aria-valuemax="800 000" style="width: 34.51%">
-                              34.51%
-                            </div>
-                          </div>
-                          <div class="progress-views"><span class="current">276 080</span> из <span class="total">800 000</span></div>
-
-                            </div>
+                          <div class="sp-holder">
+                            <input class="sp" data-angleOffset=-90 data-angleArc=180 data-fgColor="#337ab7" value="276080">
+                            <div class="sp-percent">34.51%</div>
+                            <div class="sp-from">из</div>
+                            <div class="sp-total">800000</div>
                           </div>
 
                         </div>
+                      </div>
 
-                    <div class="col-md-6">
+                    </div>
+
+                    <div class="col-md-5">
 
                       <div class="box box-solid">
                         <div class="box-header with-border">
@@ -274,7 +274,14 @@
                         <div class="box-body">
 
                           <div class="chart">
-                            <canvas id="salesChart" style="height: 180px; width: 699px;" width="699" height="180"></canvas>
+                            <div id="trafficGraph" class="traffic-graph"></div>
+                            <ul class="chart-legend">
+                              <li style="color:#f0ad4e;"><i class="fa fa-circle"></i> Social</li>
+                              <li style="color:#d9534f;"><i class="fa fa-circle"></i> Search</li>
+                              <li style="color:#5cb85c;"><i class="fa fa-circle"></i> Other</li>
+                              <li style="color:#5bc0de;"><i class="fa fa-circle"></i> Direct</li>
+                              <li style="color:#337ab7;"><i class="fa fa-circle"></i> Internal</li>
+                            </ul>
                           </div>
 
                         </div>
@@ -686,7 +693,10 @@
 
     <script src="i/lite/js/jquery-2.1.4.min.js"></script>
     <script src="i/lite/js/bootstrap.min.js"></script>
+    <script src="i/lite/js/morris.js"></script>
+    <script src="i/lite/js/raphael-min.js"></script>
     <script src="i/lite/js/chart.min.js"></script>
+    <script src="i/lite/js/jquery.knob.min.js"></script>
     <script src="i/lite/js/chart-settings.js"></script>
     <script src="i/lite/js/app.min.js"></script>
 
