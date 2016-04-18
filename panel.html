@@ -227,20 +227,31 @@
             <div class="col-md-12">
               <!-- Custom Tabs -->
               <div class="nav-tabs-custom">
-                <ul class="nav nav-tabs">
+                <ul class="nav nav-tabs tabs-holder">
                   <li><a href="#vesti" data-toggle="tab" aria-expanded="false">Газета Вести</a></li>
-                  <li class="active"><a href="#vesti-ukr" data-toggle="tab" aria-expanded="true">VESTI-UKR.COM</a></li>
-                  <li class="disabled disabledTab"><a href="#ubrua" data-toggle="tab" aria-expanded="false">UBR.UA</a></li>
-                  <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
+                  <li class="active"><a href="#vesti-ukr" data-toggle="tab">VESTI-UKR.COM</a></li>
+                  <li><a href="#radio" data-toggle="tab">RADIO.VESTI-UKR.COM</a></li>
+                  <li><a href="#ubrua" data-toggle="tab" aria-expanded="false">UBR.UA</a></li>
+                  <li class="pull-right">
+                    <div class="btn-group period-switcher">
+                      <button type="button" class="btn btn-default active">Сегодня</button>
+                      <button type="button" class="btn btn-default">2 часа</button>
+                      <button type="button" class="btn btn-default">Вчера</button>
+                      <button type="button" class="btn btn-default">На этой неделе</button>
+                      <button type="button" class="btn btn-default">На прошлой неделе</button>
+                    </div>
+                  </li>
                 </ul>
                 <div class="tab-content">
                   <div class="tab-pane" id="vesti">
+                    <img src="i/lite/img/logo.png" alt="" class="tab-logo"> Газета
                   <p>Нет информации</p>
                   </div><!-- /.tab-pane -->
                   <div class="tab-pane active" id="vesti-ukr">
+                    <img src="i/lite/img/logo.png" alt="" class="tab-logo"> Сайт
                   <div class="row">
-                    <div class="col-md-4">
 
+                    <div class="col-md-4 sp-box-holder">
                       <div class="box box-solid">
                         <div class="box-header with-border">
                           <h3 class="box-title">Всего просмотров</h3>
@@ -253,8 +264,7 @@
                           <div class="sp-holder">
                             <input class="sp" data-angleOffset=-90 data-angleArc=180 data-fgColor="#337ab7" value="276080">
                             <div class="sp-percent">34.51%</div>
-                            <div class="sp-from">из</div>
-                            <div class="sp-total">800000</div>
+                            <div class="sp-total"><span>из</span> 800000</div>
                           </div>
 
                         </div>
@@ -262,7 +272,7 @@
 
                     </div>
 
-                    <div class="col-md-5">
+                    <div class="col-md-5 chart-box-holder">
 
                       <div class="box box-solid">
                         <div class="box-header with-border">
@@ -289,7 +299,7 @@
 
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 soc-box-holder">
 
                       <div class="box box-solid">
                         <div class="box-header with-border">
@@ -333,10 +343,38 @@
 
                       </div>
 
-
+<div class="row">
+  <div class="col-md-6">
+    <table class="table table-holder">
+      <tr>
+        <th>№</th>
+        <th>Название</th>
+        <th colspan="3" class="text-center"><span>Статистика</span></th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td class="title">
+          <a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a>
+        </td>
+        <td class="rating"><i class="fa fa-arrow-up up"></i></td>
+        <td class="graph">
+          <span id="small-chart-1">264,856,1200,4056,3509,3809,5093</span>
+        </td>
+        <td class="traf-stat">
+          <div class="views"><i class="fa fa-eye"></i> 29303</div>
+          <div class="users"><i class="fa fa-user"></i>25938</div>
+        </td>
+      </tr>
+      <tr>
+        <td><i class="fa fa-pencil-square-o"></i></td>
+        <td colspan="4"><span><a href="author.html">Анастасия Рябоконь</a>, <a href="author.html">Виктор Шевченко</a>, <a href="author.html">Андрей Субботин</a>, <a href="author.html">Виктория Новоселова</a></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
 
                     <div class="row">
-                      <div class="col-xs-12 col-sm-6">
+                      <div class="col-xs-12 col-sd-12 col-lg-6 left-table">
                         <div class="box box-primary">
                           <div class="box-header with-border">
                             <h3 class="box-title">Популярные статьи сегодня</h3>
@@ -344,12 +382,14 @@
                               <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                             </div>
                           </div>
+
                           <div class="box-body table-responsive no-padding">
+
                             <table class="table table-hover">
                               <tr>
-                                <th>ID</th>
+                                <th>№</th>
                                 <th>Название</th>
-                                <th>Рейтинг</th>
+                                <th></th>
                                 <th>Кривая</th>
                                 <th>Просмотры</th>
                                 <th>Пользователи</th>
@@ -357,21 +397,25 @@
                               </tr>
                               <tr>
                                 <td>1</td>
-                                <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
+                                <td class="title">
+                                  <a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a>
+                                </td>
                                 <td class="rating"><i class="fa fa-arrow-up up"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-1" width="75" height="40"></canvas>
+                                  <span id="small-chart-1">264,856,1200,4056,3509,3809,5093</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
                                 <td><a href="author.html">Анастасия Рябоконь</a></td>
+                              <tr>
+                              </tr>
                               </tr>
                               <tr>
                                 <td>2</td>
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-minus middle"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-2" width="75" height="40"></canvas>
+                                  <span id="small-chart-2">264,856,1200,1202,1198,1206,1194</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -382,7 +426,7 @@
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-arrow-up up"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-3" width="75" height="40"></canvas>
+                                  <span id="small-chart-3">264,856,1200,4056,3509,10203,15093</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -393,7 +437,7 @@
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-arrow-down down"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-4" width="75" height="40"></canvas>
+                                  <span id="small-chart-4">264,856,1200,4056,3509,3009,2896</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -404,7 +448,7 @@
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-arrow-up up"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-5" width="75" height="40"></canvas>
+                                  <span id="small-chart-5">1264,856,1200,3056,2509,4809,6243</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -415,7 +459,7 @@
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-arrow-up up"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-6" width="75" height="40"></canvas>
+                                  <span id="small-chart-6">1264,1856,1200,4056,5039,5809,5993</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -426,7 +470,7 @@
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-arrow-down down"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-7" width="75" height="40"></canvas>
+                                  <span id="small-chart-7">8644,8356,7200,4056,3509,3809,2093</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -437,7 +481,7 @@
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-arrow-up up"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-8" width="75" height="40"></canvas>
+                                  <span id="small-chart-8">264,856,1200,4056,3509,3809,5093</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -448,7 +492,7 @@
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-arrow-up up"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-9" width="75" height="40"></canvas>
+                                  <span id="small-chart-9">264,1856,1200,13056,12509,13809,15093</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -459,7 +503,7 @@
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-arrow-down down"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-10" width="75" height="40"></canvas>
+                                  <span id="small-chart-10">264,856,1200,4056,3509,3809,5093</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -470,7 +514,7 @@
                         </div><!-- /.box -->
                       </div>
 
-                      <div class="col-xs-12 col-sm-6">
+                      <div class="col-xs-12 col-sd-12 col-lg-6 right-table">
                         <div class="box box-primary">
                           <div class="box-header with-border">
                             <h3 class="box-title">Популярные новости</h3>
@@ -481,7 +525,7 @@
                           <div class="box-body table-responsive no-padding">
                             <table class="table table-hover">
                               <tr>
-                                <th>ID</th>
+                                <th>№</th>
                                 <th>Название</th>
                                 <th>Рейтинг</th>
                                 <th>Кривая</th>
@@ -494,7 +538,7 @@
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-arrow-up up"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-11" width="75" height="40"></canvas>
+                                  <span id="small-chart-11">264,856,1200,4056,3509,3809,5093</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -505,7 +549,7 @@
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-minus middle"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-12" width="75" height="40"></canvas>
+                                  <span id="small-chart-12">264,856,1200,4056,3509,3809,5093</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -516,7 +560,7 @@
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-arrow-up up"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-13" width="75" height="40"></canvas>
+                                  <span id="small-chart-13">264,856,1200,4056,3509,3809,5093</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -527,7 +571,7 @@
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-arrow-down down"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-14" width="75" height="40"></canvas>
+                                  <span id="small-chart-14">264,856,1200,4056,3509,3809,5093</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -538,7 +582,7 @@
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-arrow-up up"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-15" width="75" height="40"></canvas>
+                                  <span id="small-chart-15">264,856,1200,4056,3509,3809,5093</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -549,7 +593,7 @@
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-arrow-up up"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-16" width="75" height="40"></canvas>
+                                  <span id="small-chart-16">264,856,1200,4056,3509,3809,5093</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -560,7 +604,7 @@
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-arrow-down down"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-17" width="75" height="40"></canvas>
+                                  <span id="small-chart-17">264,856,1200,4056,3509,3809,5093</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -571,7 +615,7 @@
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-arrow-up up"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-18" width="75" height="40"></canvas>
+                                  <span id="small-chart-18">264,856,1200,4056,3509,3809,5093</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -582,7 +626,7 @@
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-arrow-up up"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-19" width="75" height="40"></canvas>
+                                  <span id="small-chart-19">264,856,1200,4056,3509,3809,5093</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -593,7 +637,7 @@
                                 <td class="title"><a href="article.html">Обнародованы бизнес-схемы семьи Гройсмана, отработанные на Виннице</a></td>
                                 <td class="rating"><i class="fa fa-arrow-down down"></i></td>
                                 <td class="graph">
-                                  <canvas id="small-chart-20" width="75" height="40"></canvas>
+                                  <span id="small-chart-20">264,856,1200,4056,3509,3809,5093</span>
                                 </td>
                                 <td class="views"><span>29303</span></td>
                                 <td class="users"><span>25938</span></td>
@@ -605,13 +649,15 @@
                       </div>
                     </div>
                   </div>
-                    </div>
-
-                  </div><!-- /.tab-pane -->
                   <div class="tab-pane" id="radio">
-
+                    <img src="i/lite/img/logo-radio.png" alt="" class="tab-logo">
+                    <p>Нет информации</p>
                   </div><!-- /.tab-pane -->
                   <div class="tab-pane" id="ubrua">
+                    <img src="i/lite/img/logo-ubr.png" alt="" class="tab-logo">
+                    <p>Нет информации</p>
+                  </div><!-- /.tab-pane -->
+                    </div>
 
                   </div><!-- /.tab-pane -->
                 </div><!-- /.tab-content -->
@@ -695,9 +741,9 @@
     <script src="i/lite/js/bootstrap.min.js"></script>
     <script src="i/lite/js/morris.js"></script>
     <script src="i/lite/js/raphael-min.js"></script>
-    <script src="i/lite/js/chart.min.js"></script>
+    <script src="i/lite/js/jquery.sparkline.min.js"></script>
     <script src="i/lite/js/jquery.knob.min.js"></script>
-    <script src="i/lite/js/chart-settings.js"></script>
+    <script src="i/lite/js/settings.js"></script>
     <script src="i/lite/js/app.min.js"></script>
 
   </body>
