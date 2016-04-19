@@ -1,14 +1,17 @@
     body {
       font-family: 'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif;
     }
-    .checkbox, .radio {
+    .skin-vesti a {
+        color: #428bca;
+    }
+    .skin-vesti .checkbox, .radio {
       margin-left: 20px;
     }
-    .btn.btn-blue {
+    .skin-vesti .btn.btn-blue {
       background: #06256c;
       border-color: #002072;
     }
-    .nav-tabs-custom>.nav-tabs>li.active {
+    .skin-vesti .nav-tabs-custom>.nav-tabs>li.active {
       border-top-color: #06256c;
     }
     .skin-vesti .content {
@@ -16,6 +19,9 @@
         padding: 0;
         margin-right: auto;
         margin-left: auto;
+    }
+    .skin-vesti .main-header>.navbar {
+        margin-left: 200px;
     }
     .skin-vesti .dropdown-menu .divider {
         margin: 0;
@@ -49,6 +55,7 @@
     }
     .skin-vesti .graph {
         max-width: 150px;
+        word-break: break-all;
     }
     .skin-vesti .graph svg text {
         font-weight: normal !important;
@@ -249,19 +256,30 @@
         outline: none;
     }
     .skin-vesti .box {
-      border: 2px solid #f4f4f4;
+      border: 1px solid #dddddd;
       overflow: hidden;
       box-shadow: 0 1px 1px rgba(0,0,0,0);
-        margin-bottom: 15px;
+      margin-bottom: 15px;
     }
     .skin-vesti .box:hover {
-      border: 2px solid #cecece;
+      border-color: #999;
+    }
+    .box-header.with-border {
+        border-bottom: 0;
     }
     .skin-vesti .box:hover .box-header.with-border {
-        border-bottom: 1px solid #cecece;
+        border-color: #cecece;
     }
     .skin-vesti .box .btn {
       color: #cecece;
+    }
+    .skin-vesti .box .table>tbody>tr>th,
+    .skin-vesti .box .table>tbody>tr>td {
+        border-color: #dddddd;
+    }
+    .skin-vesti .box-body>.table {
+        font-size: 13px;
+        line-height: 19px;
     }
     .skin-vesti .box .box-body>.table th {
         font-size: 13px;
@@ -347,6 +365,7 @@
     }
     .skin-vesti .table .author a {
         color: #999999;
+        font-size: 12px;
     }
     .skin-vesti .table .author a:hover {
         color: #72afd2;
@@ -441,17 +460,22 @@
     .skin-vesti .dd-selector >a,
     .skin-vesti .dd-selector .dropdown-menu>li>a {
         padding: 12px 15px;
-        width: 230px;
+        width: 200px;
     }
     .skin-vesti .dd-selector .dropdown-menu>li>a {
-        width: 228px;
+        width: 198px;
     }
     .skin-vesti .dd-selector >a span {
         position: relative;
         top: 2px;
+        color: #333;
     }
     .skin-vesti .dd-selector .down {
         float: right;
         margin: 4px 0 0 0;
         color: #999999;
+    }
+    .skin-vesti .dataRange { position: relative; }
+    .skin-vesti .dataRange i {
+        position: absolute; bottom: 10px; right: 24px; top: auto; cursor: pointer;
     }
