@@ -451,7 +451,7 @@
     }
     .skin-vesti .dd-selector .dropdown-menu {
         padding: 0;
-        box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.2);
+        box-shadow: 1px 1px 5px 0 rgba(50, 50, 50, 0.2);
     }
     .skin-vesti .dd-selector {
         background: #ffffff;
@@ -475,7 +475,20 @@
         margin: 4px 0 0 0;
         color: #999999;
     }
-    .skin-vesti .dataRange { position: relative; }
+    .skin-vesti .dataRange {
+        position: relative;
+        margin-left: 15px;
+        top: -1px;
+        margin-top: 15px;
+    }
     .skin-vesti .dataRange i {
-        position: absolute; bottom: 10px; right: 24px; top: auto; cursor: pointer;
+        position: absolute; bottom: 10px; right: 15px; top: auto; cursor: pointer;
+    }
+    .skin-vesti .dataRange label {
+        float: left;
+        padding: 6px 10px 0 0;
+    }
+    .skin-vesti .dataRange input {
+        width: 210px;
+        border-bottom: 0;
     }

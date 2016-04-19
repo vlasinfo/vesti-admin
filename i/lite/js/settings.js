@@ -63,7 +63,7 @@ $(function () {
             {label: "Одноклассники", value: 2839}
         ],
         hideHover: 'auto',
-        labelColor: '#333333',
+        labelColor: '#333333'
     });
 });
 
@@ -89,6 +89,7 @@ $('#small-chart-1, #small-chart-2, #small-chart-3, #small-chart-4, #small-chart-
 $(function () {
 
     $('#dateRange').daterangepicker({
+        "autoApply": true,
         "ranges": {
             "Сегодня": [
                 "2016-04-19",
@@ -143,6 +144,7 @@ $(function () {
             ],
             "firstDay": 1
         },
+        "linkedCalendars": false,
         "startDate": "04/13/2016",
         "endDate": "04/19/2016"
     })
